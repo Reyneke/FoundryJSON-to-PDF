@@ -1,0 +1,939 @@
+{
+  "type": "Player",
+  "system": {
+    "overflow": {
+      "base": 0,
+      "mod": 0,
+      "value": 0,
+      "max": 0
+    },
+    "nuyen": 1400,
+    "mortype": "magician",
+    "attributes": {
+      "bod": {
+        "base": 2,
+        "mod": 0,
+        "pool": 2,
+        "modString": "2 Konstitution"
+      },
+      "agi": {
+        "base": 3,
+        "mod": 0,
+        "pool": 3,
+        "modString": "3 Geschicklichkeit"
+      },
+      "rea": {
+        "base": 4,
+        "mod": 0,
+        "pool": 4,
+        "modString": "4 Reaktion"
+      },
+      "str": {
+        "base": 2,
+        "mod": 0,
+        "pool": 2,
+        "modString": "2 Stärke"
+      },
+      "wil": {
+        "base": 3,
+        "mod": 0,
+        "pool": 3,
+        "modString": "3 Willenskraft"
+      },
+      "log": {
+        "base": 3,
+        "mod": 0,
+        "pool": 3,
+        "modString": "3 Logik"
+      },
+      "int": {
+        "base": 5,
+        "mod": 0,
+        "pool": 5,
+        "modString": "5 Intuition"
+      },
+      "cha": {
+        "base": 4,
+        "mod": 0,
+        "pool": 4,
+        "modString": "4 Charisma"
+      },
+      "mag": {
+        "base": 6,
+        "mod": 0,
+        "pool": 6,
+        "modString": "6 Magie"
+      },
+      "res": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0,
+        "modString": ""
+      }
+    },
+    "initiative": {
+      "physical": {
+        "mod": 0,
+        "dice": 1
+      },
+      "astral": {
+        "mod": 0,
+        "dice": 3
+      }
+    },
+    "derived": {
+      "attack_rating": {
+        "base": 0,
+        "mod": 6,
+        "pool": 6
+      },
+      "defense_rating": {
+        "base": 0,
+        "mod": 6,
+        "pool": 6
+      },
+      "composure": {
+        "base": 7,
+        "mod": 0,
+        "pool": 0
+      },
+      "judge_intentions": {
+        "base": 8,
+        "mod": 0,
+        "pool": 0
+      },
+      "memory": {
+        "base": 8,
+        "mod": 0,
+        "pool": 0
+      },
+      "lift_carry": {
+        "base": 5,
+        "mod": 0,
+        "pool": 0
+      }
+    },
+    "resist": {
+      "attacks": {
+        "base": 0,
+        "mod": 0,
+        "pool": 2
+      },
+      "damage": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0
+      },
+      "astral_direct": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0
+      },
+      "astral_indirect": {
+        "base": 0,
+        "mod": 0,
+        "pool": 0
+      },
+      "toxin": {
+        "base": 5,
+        "mod": 0,
+        "pool": 5
+      }
+    },
+    "skills": {
+      "astral": {
+        "points": 1,
+        "modifier": 0,
+        "modString": "5 Intuition\n1 Astral",
+        "augment": 0
+      },
+      "athletics": {
+        "points": 0,
+        "modifier": 0,
+        "modString": "3 Geschicklichkeit\n0 Athletik",
+        "augment": 0
+      },
+      "biotech": {
+        "points": 1,
+        "modifier": 0,
+        "modString": "3 Logik\n1 Biotech",
+        "augment": 0
+      },
+      "close_combat": {
+        "points": 1,
+        "modifier": 0,
+        "modString": "3 Geschicklichkeit\n1 Nahkampf",
+        "augment": 0
+      },
+      "con": {
+        "points": 3,
+        "modifier": 0,
+        "modString": "4 Charisma\n3 Überreden",
+        "augment": 0
+      },
+      "conjuring": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "cracking": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "electronics": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "enchanting": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "engineering": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "exotic_weapons": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "firearms": {
+        "points": 1,
+        "modifier": 0,
+        "modString": "3 Geschicklichkeit\n1 Feuerwaffen",
+        "augment": 0
+      },
+      "influence": {
+        "points": 3,
+        "modifier": 0,
+        "modString": "4 Charisma\n3 Einfluss",
+        "augment": 0
+      },
+      "outdoors": {
+        "points": 0,
+        "modifier": 0,
+        "modString": "5 Intuition\n0 Natur",
+        "augment": 0
+      },
+      "perception": {
+        "points": 2,
+        "modifier": 0,
+        "modString": "5 Intuition\n2 Wahrnehmung",
+        "augment": 0
+      },
+      "piloting": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      },
+      "sorcery": {
+        "points": 5,
+        "modifier": 0,
+        "modString": "6 Magie\n5 Hexerei",
+        "augment": 0
+      },
+      "stealth": {
+        "points": 3,
+        "modifier": 0,
+        "modString": "3 Geschicklichkeit\n3 Heimlichkeit",
+        "augment": 0
+      },
+      "tasking": {
+        "points": 0,
+        "modifier": 0,
+        "augment": 0
+      }
+    },
+    "metatype": "Elf",
+    "gender": "FEMALE",
+    "movement": {
+      "walk": 0,
+      "sprint": 0,
+      "perHit": 0
+    },
+    "physical": {
+      "base": 8,
+      "mod": 1,
+      "modString": "8 Körperlicher Monitor\n1 Konstitution/2",
+      "value": 9,
+      "max": 0
+    },
+    "stun": {
+      "base": 8,
+      "mod": 2,
+      "modString": "8 Geistiger Monitor\n2 Willenskraft/2",
+      "value": 10,
+      "max": 0
+    },
+    "edge": {
+      "value": 1,
+      "max": 1
+    }
+  },
+  "generatorName": "Commlink6",
+  "generatorVersion": "1.12.4",
+  "exportVersion": "14.0",
+  "token": {
+    "name": "Echo",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "scale": 1,
+    "mirrorX": false,
+    "mirrorY": false,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1.0,
+    "hidden": false,
+    "vision": false,
+    "dimSight": 0,
+    "brightSight": 0,
+    "dimLight": 0,
+    "brightLight": 0,
+    "sightAngle": 0.0,
+    "lightAngle": 0.0,
+    "lightAlpha": 0.0,
+    "disposition": 0,
+    "displayBars": 20,
+    "randomImg": false
+  },
+  "items": [
+    {
+      "type": "skill",
+      "data": {
+        "genesisID": "language",
+        "points": 2,
+        "modifier": 0
+      },
+      "effects": [],
+      "name": "Arabisch",
+      "sort": 0
+    },
+    {
+      "type": "skill",
+      "data": {
+        "genesisID": "language",
+        "points": 2,
+        "modifier": 0
+      },
+      "effects": [],
+      "name": "Englisch",
+      "sort": 0
+    },
+    {
+      "type": "skill",
+      "data": {
+        "genesisID": "language",
+        "points": 4,
+        "modifier": 0
+      },
+      "effects": [],
+      "name": "Muttersprache",
+      "sort": 0
+    },
+    {
+      "type": "skill",
+      "data": {
+        "genesisID": "knowledge",
+        "points": 1,
+        "modifier": 0
+      },
+      "effects": [],
+      "name": "News und Entertainment",
+      "sort": 0
+    },
+    {
+      "type": "skill",
+      "data": {
+        "genesisID": "knowledge",
+        "points": 1,
+        "modifier": 0
+      },
+      "effects": [],
+      "name": "Konzernpolitik (Proteus)",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "insulating_coat",
+        "product": "companion",
+        "page": 136
+      },
+      "effects": [],
+      "name": "Isolierendes Fell",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "functional_tail",
+        "product": "companion",
+        "page": 131
+      },
+      "effects": [],
+      "name": "Funktionaler Schwanz",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "claws",
+        "product": "companion",
+        "page": 132
+      },
+      "effects": [],
+      "name": "Klauen",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "keen_eared",
+        "product": "companion",
+        "page": 132
+      },
+      "effects": [],
+      "name": "Hellhörig",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "mentor_spirit",
+        "product": "core",
+        "page": 74
+      },
+      "effects": [],
+      "name": "Schutzgeist",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "accident_prone",
+        "product": "double_clutch",
+        "page": 173
+      },
+      "effects": [],
+      "name": "Unfallträchtig",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "gremlins",
+        "product": "core",
+        "page": 76
+      },
+      "effects": [],
+      "name": "Gremlins",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "NORMAL",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "low-light_vision",
+        "product": "core",
+        "page": 76
+      },
+      "effects": [],
+      "name": "Restlichtverstärkung",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "fangs",
+        "product": "companion",
+        "page": 132
+      },
+      "effects": [],
+      "name": "Reisszähne",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "low-light_vision_metagenetic",
+        "product": "companion",
+        "page": 135
+      },
+      "effects": [],
+      "name": "Restlichtverstärkung",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "canine_feline",
+        "product": "companion",
+        "page": 137
+      },
+      "effects": [],
+      "name": "Hunde- oder Katzenschädel",
+      "sort": 0
+    },
+    {
+      "type": "quality",
+      "data": {
+        "category": "METAGENIC",
+        "level": false,
+        "positive": false,
+        "value": 0,
+        "modifier": [],
+        "genesisID": "unusual_hair",
+        "product": "companion",
+        "page": 140
+      },
+      "effects": [],
+      "name": "Ungewöhnliches Haar",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "handlOn": 4,
+        "handlOff": 5,
+        "accOn": 10,
+        "accOff": 10,
+        "spdiOn": 15,
+        "spdiOff": 15,
+        "tspd": 120,
+        "bod": 8,
+        "arm": 2,
+        "pil": 0,
+        "sen": 0,
+        "sea": 4,
+        "vtype": "GROUND",
+        "type": "VEHICLES",
+        "subtype": "CARS",
+        "availDef": "2",
+        "avail": 2,
+        "price": 5000,
+        "accessories": "Innenausstattung (Squatter)",
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": true,
+        "count": 1,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "dreckskarre",
+        "product": "de_berlin2080",
+        "page": 177
+      },
+      "effects": [],
+      "name": "Dreckskarre",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "defense": 4,
+        "social": -3,
+        "type": "ARMOR",
+        "subtype": "ARMOR_BODY",
+        "availDef": "2",
+        "avail": 2,
+        "price": 1000,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "armor_jacket",
+        "product": "core",
+        "page": 265
+      },
+      "effects": [],
+      "name": "Panzerjacke",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "type": "ELECTRONICS",
+        "subtype": "TOOLS",
+        "avail": 0,
+        "price": 0,
+        "needsRating": false,
+        "rating": 0,
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "software_library",
+        "product": "core",
+        "page": 271
+      },
+      "effects": [],
+      "name": "Software Bibliothek",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "dmgDef": "1K",
+        "dmg": 1,
+        "stun": false,
+        "attackRating": [
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "type": "WEAPON_CLOSE_COMBAT",
+        "subtype": "UNARMED",
+        "avail": 0,
+        "price": 0,
+        "needsRating": false,
+        "rating": 0,
+        "skill": "close_combat",
+        "skillSpec": "unarmed",
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "claws_digging",
+        "product": "companion",
+        "page": 132
+      },
+      "effects": [],
+      "name": "Klauen (Graben)",
+      "sort": 0
+    },
+    {
+      "type": "gear",
+      "data": {
+        "dmgDef": "2K",
+        "dmg": 2,
+        "stun": false,
+        "attackRating": [
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        "type": "WEAPON_CLOSE_COMBAT",
+        "subtype": "UNARMED",
+        "avail": 0,
+        "price": 0,
+        "needsRating": false,
+        "rating": 0,
+        "skill": "close_combat",
+        "skillSpec": "unarmed",
+        "wild": false,
+        "countable": false,
+        "count": 0,
+        "usedForPool": false,
+        "essence": 0.0,
+        "genesisID": "metagenetic_fangs",
+        "product": "companion",
+        "page": 132
+      },
+      "effects": [],
+      "name": "Reisszähne",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "illusion",
+        "drain": 3,
+        "duration": "sustained",
+        "range": "line_of_sight_area",
+        "type": "mana",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": true,
+        "genesisID": "phantasm",
+        "product": "core",
+        "page": 138
+      },
+      "effects": [],
+      "name": "Trugbild",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "illusion",
+        "drain": 4,
+        "duration": "sustained",
+        "range": "line_of_sight_area",
+        "type": "physical",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": true,
+        "genesisID": "trid_phantasm",
+        "product": "core",
+        "page": 138
+      },
+      "effects": [],
+      "name": "Trideo-Trugbild",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "manipulation",
+        "drain": 6,
+        "duration": "limited",
+        "range": "line_of_sight",
+        "type": "physical",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": false,
+        "genesisID": "animate_metal",
+        "product": "core",
+        "page": 139
+      },
+      "effects": [],
+      "name": "Metall Beleben",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "manipulation",
+        "drain": 4,
+        "duration": "limited",
+        "range": "line_of_sight",
+        "type": "mana",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": false,
+        "genesisID": "control_thoughts",
+        "product": "core",
+        "page": 140
+      },
+      "effects": [],
+      "name": "Gedanken Beherrschen",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "manipulation",
+        "drain": 4,
+        "duration": "permanent",
+        "range": "touch",
+        "type": "physical",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": false,
+        "genesisID": "fashion",
+        "product": "street_wyrd",
+        "page": 41
+      },
+      "effects": [],
+      "name": "Mode",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "health",
+        "drain": 3,
+        "duration": "permanent",
+        "range": "touch",
+        "type": "physical",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": false,
+        "genesisID": "heal",
+        "product": "core",
+        "page": 136
+      },
+      "effects": [],
+      "name": "Heilen",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "manipulation",
+        "drain": 4,
+        "duration": "permanent",
+        "range": "touch",
+        "type": "physical",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": false,
+        "genesisID": "makeover",
+        "product": "street_wyrd",
+        "page": 43
+      },
+      "effects": [],
+      "name": "Typveränderung",
+      "sort": 0
+    },
+    {
+      "type": "spell",
+      "data": {
+        "category": "manipulation",
+        "drain": 4,
+        "duration": "limited",
+        "range": "line_of_sight",
+        "type": "mana",
+        "alchemic": false,
+        "wild": false,
+        "isOpposed": false,
+        "withEssence": false,
+        "multiSense": false,
+        "genesisID": "control_actions",
+        "product": "core",
+        "page": 140
+      },
+      "effects": [],
+      "name": "Handlungen Beherrschen",
+      "sort": 0
+    },
+    {
+      "type": "lifestyle",
+      "data": {
+        "genesisID": "squatter",
+        "description": "Abgewrackter Multicity in einer ebenso abgewrackten Tiefgarage.",
+        "type": "squatter",
+        "cost": 600,
+        "paid": 1,
+        "sin": "229ebd99-aeed-4788-872d-c0b97c5df658"
+      },
+      "effects": [],
+      "name": "Squatter",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 4,
+        "loyalty": 3,
+        "type": "Straße",
+        "description": "Elfischer Blogger"
+      },
+      "effects": [],
+      "name": "Djax",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 2,
+        "loyalty": 3,
+        "type": "Technik",
+        "description": "Mensch, einfach, Nomen est Omen"
+      },
+      "effects": [],
+      "name": "Halon",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 2,
+        "loyalty": 4,
+        "type": "Straße",
+        "description": "Veterinär des Veterinary Medical Center, Division Hamburg Central."
+      },
+      "effects": [],
+      "name": "Doktor Mertens",
+      "sort": 0
+    },
+    {
+      "type": "contact",
+      "data": {
+        "rating": 3,
+        "loyalty": 3,
+        "type": "Medizinisch",
+        "description": "Zwergische Chirurgin bei Bumona."
+      },
+      "effects": [],
+      "name": "Doktor Thiel",
+      "sort": 0
+    }
+  ],
+  "effects": [],
+  "name": "Echo",
+  "sort": 0
+}

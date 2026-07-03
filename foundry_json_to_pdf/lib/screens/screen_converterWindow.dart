@@ -44,6 +44,9 @@ class _ScreenConverterwindowState extends State<ScreenConverterwindow> {
   /// Path to the generated PDF file, or null if not yet generated.
   String? _pdfFilePath;
 
+  /// Cached PDF bytes to avoid file-reading race conditions in PdfPreview.
+  Uint8List? _pdfBytes;
+
   /// Whether the selected file is being dragged over the input container.
   bool _isDragging = false;
 
@@ -81,6 +84,9 @@ class _ScreenConverterwindowState extends State<ScreenConverterwindow> {
         character: character,
         system: _selectedSystem,
       );
+
+      // Cache PDF bytes in memory for immediate display
+      _pdfBytes = pdfBytes;
 
       // Save the PDF to the app's temporary directory
       final directory = await getTemporaryDirectory();
@@ -329,6 +335,26 @@ class _ScreenConverterwindowState extends State<ScreenConverterwindow> {
                       canChangePageFormat: false,
                       canChangeOrientation: false,
                       canDebug: false,
+                      onError: (context, error) => Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.error_outline,
+                              size: 48,
+                              color: theme.colorScheme.error,
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              'Unable to display the document',
+                              style: theme.textTheme.bodyLarge?.copyWith(
+                                color: theme.colorScheme.error,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -374,7 +400,8 @@ class _ScreenConverterwindowState extends State<ScreenConverterwindow> {
 
   /// Provides PDF bytes for the PdfPreview widget.
   Future<Uint8List> _buildPdf(PdfPageFormat format) async {
-    if (_pdfFilePath == null) return Uint8List(0);
-    return await File(_pdfFilePath!).readAsBytes();
+    if (_pdfBytes != null) return _pdfBytes!;
+    if (_pdfFilePath != null) return await File(_pdfFilePath!).readAsBytes();
+    return Uint8List(0);
   }
 }
